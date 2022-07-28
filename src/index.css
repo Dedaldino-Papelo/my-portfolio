@@ -1,0 +1,51 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.content-side{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.image-side{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
+.image-side img{
+    width: 40vw;
+}
+.box-content{
+    max-width: 600px;
+}
+
+.box-content a{
+    border:  2px solid #1e65cf;
+    text-decoration: none;
+    padding: 15px;
+    color: #1e65cf;
+}
+.box-content p{
+   margin-top: 20px;
+   margin-bottom: 40px;
+}
+
+.skills{
+    background: #efefef;
+    padding: 70px;
+}
+.skill-item{
+    position: relative;
+    width: 100px;
+    margin-left: 20px;
+}
+.item-name{
+    position: absolute;
+    box-sizing: border-box;
+    top:100%;
+    left:30px;
+}
+.box-skills{
+    max-width: 700px;
+}
