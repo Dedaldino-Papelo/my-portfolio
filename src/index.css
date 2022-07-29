@@ -1,11 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
+/* Home */
+.Home{
+    background-color: rgb(18, 18, 20);
+    color: rgb(225, 225, 230);
+}
+
 .content-side{
     width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+.content-side h1{
+    font-weight: bold;
+    line-height: 3.45rem;
+}
+.Home-name{
+    color: #365cb3;
 }
 .image-side{
     width: 50%;
@@ -21,10 +39,15 @@ body{
 }
 
 .box-content a{
-    border:  2px solid #1e65cf;
-    text-decoration: none;
+    background:  #193e95;
     padding: 15px;
-    color: #1e65cf;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.box-content a:hover{
+    background-color: #365cb3;
 }
 .box-content p{
    margin-top: 20px;
@@ -32,7 +55,8 @@ body{
 }
 
 .skills{
-    background: #efefef;
+    background: rgb(32, 32, 36);
+    color: rgb(225, 225, 230);
     padding: 70px;
 }
 .skill-item{
@@ -48,4 +72,86 @@ body{
 }
 .box-skills{
     max-width: 700px;
+}
+.project-box{
+    padding: 50px;
+    background-color: rgb(18, 18, 20);
+}
+.project-box h2{
+    color:rgb(225, 225, 230) ;
+}
+.contact{
+    padding: 50px;
+}
+.contact-image img{
+    width: 30vw;
+}
+.card-link:first-child{
+    width: 100%;
+    background-color:  #193e95;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(225, 225, 230);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.card-link:last-child{
+    width: 100%;
+    border: 2px solid  #193e95;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(225, 225, 230);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.card-link:last-child:hover{
+  background-color: rgb(29, 28, 28)
+}
+.card-link:hover:first-child{
+    background-color:#365cb3;;
+}
+.contact{
+    background-color:rgb(32, 32, 36) ;
+}
+.card{
+    background-color: rgb(32, 32, 36) ;
+    color: rgb(225, 225, 230);
+    padding: 15px;
+}
+
+.contact-form{
+    color: #fff;
+    padding: 30px;
+    max-width: 480px;
+    border-radius: 5px;
+    background: rgb(32, 32, 36);
+}
+.contact-form input, textarea{
+    width: 100%;
+    border: none;
+    color: #fff;
+    background: rgb(18, 18, 20);
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 15px 2.67rem;
+}
+.contact-form button{
+    width: 100%;
+    background:  #365cb3;
+    font-size: 16px;
+    padding: 15px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.contact-form button:hover{
+    background:  #193e95;
+}
+.contact-form h3{
+    margin-bottom: 39px;
 }

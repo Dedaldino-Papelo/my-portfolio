@@ -5,13 +5,13 @@ import ProjectCard from './ProjectCard'
 
 const Projects = () => {
   return (
-    <div>
-      <h2>My Projects</h2>
-      <div>
-        <Row>
+    <div className="project-box">
+        <h2 className='text-center'>Projects</h2>
+      <div className='box-projects mt-4 d-flex flex-wrap'>
+        <Row className='d-flex justify-content-center'>
           {projects.map(project => {
             return (
-              <Col sm={12} md={6} lg={4} xl={3}>
+              <Col sm={12} md={4} lg={4} xl={3}>
                 <ProjectCard project={project} />
             </Col>
             )

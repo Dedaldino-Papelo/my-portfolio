@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <div className='skills d-flex flex-column justify-content-center align-items-center'>
       
-      <h3>My Skills and Technologs</h3>
+      <h3>My Skills and Technologies</h3>
       
       <div className='box-skills d-flex gap-4 flex-wrap mt-4'>
 
