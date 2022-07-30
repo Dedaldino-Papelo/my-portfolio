@@ -11,7 +11,7 @@ const Home = () => {
             I'm Computer Engineer
         </h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod velit non perspiciatis natus deserunt sunt illo cumque pariatur atque doloribus nobis cupiditate, rerum dolore veritatis nihil sint exercitationem hic ea?</p>
-        <a href="#">Download CV</a>
+        <a href="src/assets/Curriculum Vitae.pdf" download>Download CV</a>
         </div>
       </div>
       <div className='image-side'>

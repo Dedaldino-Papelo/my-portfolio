@@ -2,13 +2,19 @@ import React from 'react'
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Menu = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Dev</Navbar.Brand>
+
+        <Navbar.Brand href="#home">
+        <FontAwesomeIcon icon={faCode} /> &nbsp;
+        Dedaldino
+          </Navbar.Brand>
+
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
@@ -30,7 +36,7 @@ const Menu = () => {
                 <FontAwesomeIcon icon={faLinkedin} className='font-icon' />
               </Nav.Link>
 
-              <Nav.Link href="">
+              <Nav.Link href="https://api.whatsapp.com/send?phone=939736657">
                 <FontAwesomeIcon icon={faWhatsapp} className='font-icon' />
               </Nav.Link>
             </div>
