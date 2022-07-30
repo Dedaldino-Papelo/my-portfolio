@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='contact d-flex'>
+    <div className='contact d-flex' id='contact'>
 
       <div className='contact-image w-50 d-flex justify-content-center align-items-center'>
         <img src='src/assets/Contact-me.png' alt='Contact' />

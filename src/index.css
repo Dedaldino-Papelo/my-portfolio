@@ -155,3 +155,16 @@ body{
 .contact-form h3{
     margin-bottom: 39px;
 }
+.font-icon{
+    color:  #fff;
+    width: 1.40rem;
+    height: 1.40rem;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(225, 225, 230);
+    transition: 0.3s;
+}
+.font-icon:hover{
+    color: #111;  
+    background-color: #fff;
+}

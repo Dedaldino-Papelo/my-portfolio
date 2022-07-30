@@ -5,7 +5,7 @@ import ProjectCard from './ProjectCard'
 
 const Projects = () => {
   return (
-    <div className="project-box">
+    <div className="project-box" id="project">
         <h2 className='text-center'>Projects</h2>
       <div className='box-projects mt-4 d-flex flex-wrap'>
         <Row className='d-flex justify-content-center'>

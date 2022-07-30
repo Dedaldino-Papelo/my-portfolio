@@ -11,7 +11,7 @@ import cSharp from '../assets/icons/cSharp.svg'
 
 const Skills = () => {
   return (
-    <div className='skills d-flex flex-column justify-content-center align-items-center'>
+    <div id='skills' className='skills d-flex flex-column justify-content-center align-items-center'>
       
       <h3>My Skills and Technologies</h3>
       

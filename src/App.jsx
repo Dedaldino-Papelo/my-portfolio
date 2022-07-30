@@ -7,13 +7,13 @@ import Contact from "./components/Contact"
 function App() {
 
   return (
-    <>
+    <div>
       <Menu />
       <Home />
       <Skills />
       <Projects />
       <Contact />
-    </>
+    </div>
   )
 }
 
