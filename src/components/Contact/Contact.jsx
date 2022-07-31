@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './contact.css'
 import axios from 'axios'
 
 
@@ -7,10 +8,15 @@ const Contact = () => {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [loading, setLoading] = useState(false)
-  const [isDisabled, setDisabled] = useState(false);
 
   const submithandler = async(e) => {
+
     e.preventDefault()
+    if(!(name || email || message)){
+      alert("All fields are required")
+      return
+    }
+
    try {
     setLoading(true)
     const {data} = await axios.post("http://localhost:5000/contact",{
@@ -19,6 +25,7 @@ const Contact = () => {
 
     alert(data)
     setLoading(false)
+
     
    } catch (error) {
       console.log(error)
@@ -27,18 +34,16 @@ const Contact = () => {
   }
 
   return (
-    <div className='contact d-flex' id='contact'>
+    <div id='contact' className='main'>
+      <div className='left'>
+      <img src='src/assets/Contact-me.png' alt='Contact' />
+      </div>
 
-      <div className='contact-image w-50 d-flex justify-content-center align-items-center'>
-        <img src='src/assets/Contact-me.png' alt='Contact' />
-        </div>
-
-      <div className='w-50 d-flex align-items-center'>
-        <div className='contact-form'>
-          <h3>Envie-me uma Mensagem</h3>
-          
-          <form className='d-flex flex-column gap-2' onSubmit={submithandler}>
-            <input 
+      <div className='right'>
+        <div className='form-box'>
+          <h3>Envie-me uma mensagem</h3>
+          <form>
+          <input 
             onChange={(e) => setName(e.target.value)} 
             type='text' 
               placeholder='Nome' />
@@ -51,7 +56,7 @@ const Contact = () => {
               style={{resize:'none'}} 
                 placeholder='Mensagem'></textarea>
             
-            <button>{loading ? 'Enviando...': 'Enviar'}</button>
+            <button disabled={loading}>{loading ? 'Enviando...': 'Enviar'}</button>
           </form>
         </div>
       </div>

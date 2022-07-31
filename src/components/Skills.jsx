@@ -13,50 +13,50 @@ const Skills = () => {
   return (
     <div id='skills' className='skills d-flex flex-column justify-content-center align-items-center'>
       
-      <h3>My Skills and Technologies</h3>
+      <h3>Skills and Technologies</h3>
       
-      <div className='box-skills d-flex gap-4 flex-wrap mt-4'>
+      <div className='box-skills d-flex gap-4 flex-wrap'>
 
       <div className='skill-item'>
             <img src={html} alt="html" />
-            <strong className='item-name'>Html</strong>
+            <span className='item-name'>Html</span>
         </div>
 
         
         <div className='skill-item'>
             <img src={css} alt="css" />
-            <strong className='item-name'>Css</strong>
+            <span className='item-name'>Css</span>
         </div>
 
         
         <div className='skill-item'>
             <img src={javascript} alt="javascript" />
-            <strong className='item-name'>Js</strong>
+            <span className='item-name'>Javascript</span>
         </div>
 
         <div className='skill-item'>
             <img src={nodejs} alt="Node" />
-            <strong className='item-name'>Nodejs</strong>
+            <span className='item-name'>Nodejs</span>
         </div>
 
         <div className='skill-item'>
         <img src={react} alt="react" />
-            <strong className='item-name'>React</strong>
+            <span className='item-name'>React</span>
         </div>
 
         <div className='skill-item'>
             <img src={mysql} alt="mysql" />
-            <strong className='item-name'>Mysql</strong>
+            <span className='item-name'>Mysql</span>
         </div>
 
         <div className='skill-item'>
             <img src={git} alt="git" />
-            <strong className='item-name'>Git</strong>
+            <span className='item-name'>Git</span>
         </div>
 
         <div className='skill-item'>
             <img src={cSharp} alt="cSharp" />
-            <strong className='item-name'>C#.Net</strong>
+            <span className='item-name'>C#.Net</span>
         </div>
 
       </div>
